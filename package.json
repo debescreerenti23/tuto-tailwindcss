@@ -13,5 +13,8 @@
   "devDependencies": {
     "@tailwindcss/cli": "^4.2.4",
     "tailwindcss": "^4.2.4"
+  },
+  "dependencies": {
+    "@midudev/tailwind-animations": "^1.0.1"
   }
 }

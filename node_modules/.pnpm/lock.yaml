@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@midudev/tailwind-animations':
+        specifier: ^1.0.1
+        version: 1.0.1(tailwindcss@4.2.4)
     devDependencies:
       '@tailwindcss/cli':
         specifier: ^4.2.4
@@ -32,6 +36,11 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
+
+  '@midudev/tailwind-animations@1.0.1':
+    resolution: {integrity: sha512-KOtvFo7LJlw4Xko9akFhPqpGEDx+r/Dle+44G9uBYeiGEJNVUEaEIG251j+USDxPtMV5grJuc4kFxTunv5rZvA==}
+    peerDependencies:
+      tailwindcss: ^4.0.0
 
   '@parcel/watcher-android-arm64@2.5.6':
     resolution: {integrity: sha512-YQxSS34tPF/6ZG7r/Ih9xy+kP/WwediEUsqmtf0cuCV5TPPKw/PQHRhueUo6JdeFJaqV3pyjm0GdYjZotbRt/A==}
@@ -332,6 +341,11 @@ packages:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
     engines: {node: '>=0.10.0'}
 
+  tailwind-animations@1.0.1:
+    resolution: {integrity: sha512-5ouCdgfGS4kcyuzRSb/1O3o9f5Akssi7ue46PHfKjvPLMWjtnzmqM8i6ElES3tKVTyhjSaTPfLti7aB7WSxhZg==}
+    peerDependencies:
+      tailwindcss: ^4.0.0
+
   tailwindcss@4.2.4:
     resolution: {integrity: sha512-HhKppgO81FQof5m6TEnuBWCZGgfRAWbaeOaGT00KOy/Pf/j6oUihdvBpA7ltCeAvZpFhW3j0PTclkxsd4IXYDA==}
 
@@ -359,6 +373,11 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
+
+  '@midudev/tailwind-animations@1.0.1(tailwindcss@4.2.4)':
+    dependencies:
+      tailwind-animations: 1.0.1(tailwindcss@4.2.4)
+      tailwindcss: 4.2.4
 
   '@parcel/watcher-android-arm64@2.5.6':
     optional: true
@@ -570,6 +589,10 @@ snapshots:
   picomatch@4.0.4: {}
 
   source-map-js@1.2.1: {}
+
+  tailwind-animations@1.0.1(tailwindcss@4.2.4):
+    dependencies:
+      tailwindcss: 4.2.4
 
   tailwindcss@4.2.4: {}
 
